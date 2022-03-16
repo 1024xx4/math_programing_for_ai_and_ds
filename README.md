@@ -1,0 +1,2 @@
+# math_programing_for_ai_and_ds
+書籍「AI･データサイエンスのための図解でわかる数学プログラミング」の学習用 Repository
