@@ -8,6 +8,7 @@ jupyter = "*"
 pandas = "*"
 matplotlib = "*"
 japanize-matplotlib = "*"
+numpy = "*"
 
 [dev-packages]
 
