@@ -9,6 +9,7 @@ pandas = "*"
 matplotlib = "*"
 japanize-matplotlib = "*"
 numpy = "*"
+sklearn = "*"
 
 [dev-packages]
 
