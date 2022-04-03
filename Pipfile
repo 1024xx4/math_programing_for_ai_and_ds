@@ -10,6 +10,7 @@ matplotlib = "*"
 japanize-matplotlib = "*"
 numpy = "*"
 sklearn = "*"
+dtreeviz = "*"
 
 [dev-packages]
 
