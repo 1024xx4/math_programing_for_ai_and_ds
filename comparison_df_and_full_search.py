@@ -112,7 +112,7 @@ class TSPBruteForce(Graph):
         calc_count = 0
         while stack:
             route, visited = stack.pop()
-            if visited == (1 << n) - 1:
+            if visited == (1 << n) - 1:  # 終点以外のすべての頂点に訪れたか
                 calc_count += 1
                 d = self.calculate_dist(route)
                 if d >= dist: continue
@@ -120,10 +120,10 @@ class TSPBruteForce(Graph):
                 res_route = route
 
             for i in range(n):
-                if i == src or visited >> i & 1: continue
+                if i == src or visited >> i & 1: continue  # 頂点i に訪れたか
                 nxt_route = route.copy()
                 nxt_route.append(i)
-                stack.append((nxt_route, visited | (1 << i)))
+                stack.append((nxt_route, visited | (1 << i)))  # 次に訪れる頂点i を追加した頂点集合
 
         print(f"計算回数: {calc_count}")
         return dist, res_route
@@ -133,15 +133,15 @@ class TSPDP(Graph):
     # DP Algorithm
     def __call__(self, src=0):
         n = self.N
-        dp = [[(inf, None)] * n for _ in range(1 << n)]
+        dp = [[(inf, None)] * n for _ in range(1 << n)]  # (bit演算)range(1 << n): すべての頂点集合を列挙
         dp[1][src] = (0, None)
         calc_count = 0
-        for s in range(1 << n):
+        for s in range(1 << n):  # (bit演算)range(1 << n): すべての頂点集合を列挙
             for v in range(n):
-                if s >> v & 1: continue
+                if s >> v & 1: continue  # (bit演算)頂点集合s に頂点v が含まれているか判定
                 t = s | (1 << v)  # tはsにvを追加した集合
                 for u in range(n):
-                    if ~s >> u & 1: continue
+                    if ~s >> u & 1: continue  # 頂点集合s に頂点u が含まれていないかを判定
                     d = dp[s][u][0] + self.edges[u][v].weight
                     if d >= dp[t][v][0]:
                         continue
