@@ -1,0 +1,5 @@
+pandas==1.1.5
+matplotlib==3.2.2
+pulp==1.6.10
+ortoolpy==0.2.23
+
