@@ -1,0 +1,7 @@
+matplotlib==3.2.2
+numpy==1.21.6
+tensorflow==2.8.2
+opencv-python==4.1.2.30
+lxml==4.2.6
+tqdm==4.48.0
+xmltodict==0.12.0
