@@ -8,6 +8,8 @@ jupyter = "*"
 pandas = "*"
 matplotlib = "*"
 numpy = "*"
+sklearn = "*"
+scikit-learn = "*"
 
 [dev-packages]
 
