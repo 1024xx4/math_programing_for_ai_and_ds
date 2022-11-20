@@ -11,6 +11,7 @@ numpy = "*"
 sklearn = "*"
 scikit-learn = "*"
 dtreeviz = "*"
+networkx = "*"
 
 [dev-packages]
 
