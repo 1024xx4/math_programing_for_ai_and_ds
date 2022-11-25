@@ -12,6 +12,8 @@ sklearn = "*"
 scikit-learn = "*"
 dtreeviz = "*"
 networkx = "*"
+pulp = "*"
+ortoolpy = "*"
 
 [dev-packages]
 
