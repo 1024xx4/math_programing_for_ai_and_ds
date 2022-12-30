@@ -14,6 +14,10 @@ dtreeviz = "*"
 networkx = "*"
 pulp = "*"
 ortoolpy = "*"
+pillow = "*"
+tensorflow = "*"
+keras = "*"
+seaborn = "*"
 
 [dev-packages]
 
