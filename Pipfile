@@ -18,6 +18,7 @@ pillow = "*"
 tensorflow = "*"
 keras = "*"
 seaborn = "*"
+librosa = "*"
 
 [dev-packages]
 
